@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connect To People!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="recursos/estilos.css">
+        <script type="text/javascript" src="recursos/funciones.js"></script>
+    </head>
+<body>
+    <form name="form1" action="/ConnectToPeople/registro" method="POST"
+          onsubmit="return validarForm(this)">
+
+        <table width="200" id="enfasis-columna">
+            <caption>Introduce tus datos y registrate!</caption>
+            <tr>
+                <td class="columna">Usuario: (*)</td>
+                <td>
+                    <input class="default" type="text" name="usuario" 
+                           value="Escribe el usuario" onfocus="this.select()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Nombre: (*)</td>
+                <td>
+                    <input class="default" type="text" name="nombre" 
+                           value="Escribe tu nombre" onfocus="this.select()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Apellidos: (*)</td>
+                <td>
+                    <input class="default" type="text" name="apellidos" 
+                           value="Escribe tus apellidos" onfocus="this.select()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Correo Electrónico: (*)</td>
+                <td>
+                    <input class="default" type="text" name="correo" 
+                           value="Escribe tu correo" onfocus="this.select()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Password: (*)</td>
+                <td>
+                    <input class="default" type="password" name="password"
+                           onfocus="this.select()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Premium: (*)</td>
+                <td>
+                    Premium <input type="checkbox" name="premium" value=""/>
+                    &nbsp;&nbsp;&nbsp;
+                    NoPremium <input type="checkbox" name="premium" value=""/>
+                    &nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Sentimental: (*)</td>
+                <td>
+                    En relación <input type="radio" name="genero" value="Comprometido"/>
+                    &nbsp;&nbsp;&nbsp;
+                    Solter@ <input type="radio" name="genero" value="Solter@"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Tipo de Discapacidad: (*)</td>
+                <td>
+                    <select name="discpacidad" class="default">
+                        <option value="">Seleccionar</option>
+                        <option value="1">Discpacidad física</option>
+                        <option value="2">Discapacidad psíquica</option>
+                        <option value="3">Discapacidad sensorial</option>
+                        <option value="4">Otro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="columna">Acreditación de discapacidad</td>
+                <td>
+                    <textarea name="archivo" cols="30" rows="2" class="default"
+                              onfocus="this.select()">
+                        Escribe un texto...
+                    </textarea>
+                </td>
+            </tr>
+            <tr style="text-align: center">
+                <td>
+                    <input type="reset" value="Limpiar" class="default"/>
+                </td>
+                <td>
+                    <input type="submit" value="Enviar" class="default" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+    /*<body>
+        <h1>LLamando al Servlet!</h1>
+        <a href="/HolaMundoServlet/HolaMundo">Servlet HolaMundo</a>
+        <h2>Perfiles</h2>
+        <a href="/HolaMundoServlet/Perfiles">PERFILES</a>
+        <h2>Iniciar Sesión</h2>
+        <a href="/HolaMundoServlet/Usuarios">Inicia sesión o crea tu cuenta</a>
+        <h2>Amigos</h2>
+        <a href="/HolaMundoServlet/Amigos">AMIGOS</a>
+        <h2>Notificaciones</h2>
+        <a href="/HolaMundoServlet/Notificaciones">Notificaciones</a>
+        <h2>Likes</h2>
+        <a href="/HolaMundoServlet/Likes">Likes</a>
+    </body>*/
